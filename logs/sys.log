@@ -1,0 +1,88 @@
+[2016-01-21 17:28:46,631] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 135, in module_run
+    import rpyc
+ImportError: No module named rpyc
+[2016-01-21 17:29:19,167] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 135, in module_run
+    import rpyc
+ImportError: No module named rpyc
+[2016-01-21 17:32:12,739] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 171, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2016-01-21 17:38:20,437] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 171, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2016-01-21 17:42:50,994] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 171, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2016-01-21 17:53:08,627] WARNING : Session data corrupted
+[2016-01-21 17:53:16,349] WARNING : Session data corrupted
